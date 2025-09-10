@@ -1,0 +1,1037 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 0,
+        "count": 101884,
+        "avg_units": 141.39299477837542,
+        "avg_bill": 5547.53157149307,
+        "avg_load": 2.7647964351615566,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.1782749564864619,
+        "trend_pct": -18.835168197184814,
+        "centroid": [
+          77.44732554032036,
+          28.66721382592949
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.44732554032036,
+          28.66721382592949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 1,
+        "count": 457,
+        "avg_units": 85.42527352297594,
+        "avg_bill": 5297.292231947483,
+        "avg_load": 2.87746170678337,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.7118772793581328,
+        "trend_pct": -20.958531073266613,
+        "centroid": [
+          77.40968879431072,
+          28.717050763676152
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.40968879431072,
+          28.717050763676152
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 2,
+        "count": 173,
+        "avg_units": 542.1271676300578,
+        "avg_bill": 6120.47450867052,
+        "avg_load": 2.9190751445086707,
+        "avg_acs": 1.0,
+        "suggested_kw": 4.517726396917149,
+        "trend_pct": -1.7368580682892834,
+        "centroid": [
+          77.51280203468208,
+          28.777820554913294
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.51280203468208,
+          28.777820554913294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 3,
+        "count": 847,
+        "avg_units": 115.55135773317592,
+        "avg_bill": 4682.128949232585,
+        "avg_load": 2.354191263282172,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.9629279811097994,
+        "trend_pct": -24.80650922802143,
+        "centroid": [
+          77.348357,
+          28.68495303423849
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.348357,
+          28.68495303423849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 4,
+        "count": 450,
+        "avg_units": 128.17295555555555,
+        "avg_bill": 4341.685888888888,
+        "avg_load": 2.7422222222222223,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.0681079629629628,
+        "trend_pct": -28.477336624634113,
+        "centroid": [
+          77.89143236,
+          28.80961828222222
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.89143236,
+          28.80961828222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 5,
+        "count": 475,
+        "avg_units": 137.8842105263158,
+        "avg_bill": 6465.080821052631,
+        "avg_load": 2.8547368421052632,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.1490350877192983,
+        "trend_pct": -16.273985157454472,
+        "centroid": [
+          77.59594412842105,
+          28.86587090736842
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.59594412842105,
+          28.86587090736842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 6,
+        "count": 383,
+        "avg_units": 93.82767624020887,
+        "avg_bill": 3486.1628459530025,
+        "avg_load": 2.519582245430809,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.7818973020017406,
+        "trend_pct": -25.819402289990528,
+        "centroid": [
+          77.47196899738903,
+          28.718693300261098
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.47196899738903,
+          28.718693300261098
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 7,
+        "count": 388,
+        "avg_units": 61.85484536082474,
+        "avg_bill": 3619.7490721649488,
+        "avg_load": 2.7955412371134023,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.5154570446735395,
+        "trend_pct": -18.213968033222034,
+        "centroid": [
+          77.43881785824742,
+          28.711243296391753
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.43881785824742,
+          28.711243296391753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 8,
+        "count": 788,
+        "avg_units": 173.26142131979697,
+        "avg_bill": 5668.779022842638,
+        "avg_load": 2.616751269035533,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.4438451776649748,
+        "trend_pct": -15.337875481684385,
+        "centroid": [
+          77.40878937055838,
+          28.68714660532995
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.40878937055838,
+          28.68714660532995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 9,
+        "count": 145,
+        "avg_units": 120.75172413793103,
+        "avg_bill": 3427.5506896551724,
+        "avg_load": 2.703448275862069,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.0062643678160919,
+        "trend_pct": -7.311648596052267,
+        "centroid": [
+          77.72287448275863,
+          28.74988753103449
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.72287448275863,
+          28.74988753103449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 10,
+        "count": 172,
+        "avg_units": 156.2674418604651,
+        "avg_bill": 6757.506162790698,
+        "avg_load": 2.744186046511628,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.3022286821705427,
+        "trend_pct": -4.079012568133708,
+        "centroid": [
+          77.91475042441861,
+          29.10659572093024
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.91475042441861,
+          29.10659572093024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 11,
+        "count": 41,
+        "avg_units": 128.90243902439025,
+        "avg_bill": 6187.425853658537,
+        "avg_load": 3.3658536585365852,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.0741869918699187,
+        "trend_pct": -43.5730492452088,
+        "centroid": [
+          77.9202297804878,
+          29.09372807317073
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.9202297804878,
+          29.09372807317073
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 12,
+        "count": 122,
+        "avg_units": 49.26229508196721,
+        "avg_bill": 4716.939508196721,
+        "avg_load": 3.3852459016393444,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.4105191256830601,
+        "trend_pct": -38.915202498810444,
+        "centroid": [
+          77.79821308196722,
+          28.725893663934425
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.79821308196722,
+          28.725893663934425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 13,
+        "count": 73,
+        "avg_units": 537.4520547945206,
+        "avg_bill": 6875.610273972603,
+        "avg_load": 2.4657534246575343,
+        "avg_acs": 1.0,
+        "suggested_kw": 4.478767123287671,
+        "trend_pct": -27.632669983416253,
+        "centroid": [
+          77.56702353424657,
+          28.850711438356168
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.56702353424657,
+          28.850711438356168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 14,
+        "count": 350,
+        "avg_units": 112.61428571428571,
+        "avg_bill": 5372.598228571428,
+        "avg_load": 2.9,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.9384523809523809,
+        "trend_pct": -24.08621890932416,
+        "centroid": [
+          77.56924587714286,
+          28.82326343142857
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.56924587714286,
+          28.82326343142857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 15,
+        "count": 116,
+        "avg_units": 142.52586206896552,
+        "avg_bill": 3337.59724137931,
+        "avg_load": 2.439655172413793,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.1877155172413794,
+        "trend_pct": -17.98049148072173,
+        "centroid": [
+          77.4913810862069,
+          28.759452068965516
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4913810862069,
+          28.759452068965516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 16,
+        "count": 113,
+        "avg_units": 208.70017699115044,
+        "avg_bill": 18350.90371681416,
+        "avg_load": 2.566371681415929,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.7391681415929203,
+        "trend_pct": 94.29566175621036,
+        "centroid": [
+          77.79226972566372,
+          28.71766638938053
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.79226972566372,
+          28.71766638938053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 17,
+        "count": 143,
+        "avg_units": 182.006993006993,
+        "avg_bill": 9726.017832167832,
+        "avg_load": 2.7132867132867133,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.5167249417249418,
+        "trend_pct": 58.34389972414462,
+        "centroid": [
+          77.71085782517481,
+          28.747975209790212
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.71085782517481,
+          28.747975209790212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 18,
+        "count": 29,
+        "avg_units": 36.689655172413794,
+        "avg_bill": 4959.696551724139,
+        "avg_load": 2.689655172413793,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.3057471264367816,
+        "trend_pct": 4.866117404737365,
+        "centroid": [
+          77.32935982758622,
+          28.61124113793103
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.32935982758622,
+          28.61124113793103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 19,
+        "count": 40,
+        "avg_units": 13.6,
+        "avg_bill": 3385.59525,
+        "avg_load": 1.275,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.11333333333333333,
+        "trend_pct": -5.479452054794524,
+        "centroid": [
+          77.299540925,
+          28.723758550000003
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.299540925,
+          28.723758550000003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 20,
+        "count": 55,
+        "avg_units": 14.818181818181818,
+        "avg_bill": 3805.1129090909085,
+        "avg_load": 1.4727272727272727,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.12348484848484849,
+        "trend_pct": -55.47159979155809,
+        "centroid": [
+          77.661052,
+          28.924018581818185
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.661052,
+          28.924018581818185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 21,
+        "count": 47,
+        "avg_units": 127.85106382978724,
+        "avg_bill": 6097.296595744681,
+        "avg_load": 3.25531914893617,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.0654255319148935,
+        "trend_pct": -21.433311214333113,
+        "centroid": [
+          77.58509482978724,
+          28.858394127659576
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.58509482978724,
+          28.858394127659576
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 22,
+        "count": 132,
+        "avg_units": 410.92424242424244,
+        "avg_bill": 5273.478409090909,
+        "avg_load": 3.412878787878788,
+        "avg_acs": 1.0,
+        "suggested_kw": 3.424368686868687,
+        "trend_pct": -27.076244808855016,
+        "centroid": [
+          77.50587531818181,
+          28.760271954545452
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.50587531818181,
+          28.760271954545452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 23,
+        "count": 20,
+        "avg_units": 115.05,
+        "avg_bill": 5608.5185,
+        "avg_load": 3.0,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.95875,
+        "trend_pct": -7.523788448771852,
+        "centroid": [
+          77.4651208,
+          28.673652049999998
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4651208,
+          28.673652049999998
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 24,
+        "count": 24,
+        "avg_units": 44.083333333333336,
+        "avg_bill": 1343.4891666666665,
+        "avg_load": 2.25,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.36736111111111114,
+        "trend_pct": 11.277705345501959,
+        "centroid": [
+          77.53284854166667,
+          28.687211958333332
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.53284854166667,
+          28.687211958333332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 25,
+        "count": 19,
+        "avg_units": 133.78947368421052,
+        "avg_bill": 5189.518421052632,
+        "avg_load": 3.736842105263158,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.1149122807017544,
+        "trend_pct": -31.1142503973159,
+        "centroid": [
+          77.77580363157895,
+          28.731345315789476
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.77580363157895,
+          28.731345315789476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 26,
+        "count": 17,
+        "avg_units": 72.76470588235294,
+        "avg_bill": 2645.064705882353,
+        "avg_load": 2.5294117647058822,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.6063725490196078,
+        "trend_pct": -14.069209396312193,
+        "centroid": [
+          77.48482499999999,
+          28.60830511764706
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.48482499999999,
+          28.60830511764706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 27,
+        "count": 13,
+        "avg_units": 108.3076923076923,
+        "avg_bill": 4590.311538461538,
+        "avg_load": 3.0,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.9025641025641026,
+        "trend_pct": -3.347131303415148,
+        "centroid": [
+          78.02273561538462,
+          28.95770592307692
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.02273561538462,
+          28.95770592307692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 28,
+        "count": 11,
+        "avg_units": 228.36363636363637,
+        "avg_bill": 5792.754545454546,
+        "avg_load": 3.727272727272727,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.903030303030303,
+        "trend_pct": 37.66853349927402,
+        "centroid": [
+          77.48028699999999,
+          28.751220636363634
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.48028699999999,
+          28.751220636363634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 29,
+        "count": 11,
+        "avg_units": 72.54545454545455,
+        "avg_bill": 4077.6718181818183,
+        "avg_load": 2.090909090909091,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.6045454545454546,
+        "trend_pct": -22.163120567375895,
+        "centroid": [
+          77.47479781818183,
+          28.80716809090909
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.47479781818183,
+          28.80716809090909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 30,
+        "count": 12,
+        "avg_units": 37.833333333333336,
+        "avg_bill": 2261.9249999999997,
+        "avg_load": 2.25,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.3152777777777778,
+        "trend_pct": -14.857142857142867,
+        "centroid": [
+          77.42353583333333,
+          28.702350249999995
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.42353583333333,
+          28.702350249999995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 31,
+        "count": 13,
+        "avg_units": 65.6923076923077,
+        "avg_bill": 1586.9984615384615,
+        "avg_load": 2.3846153846153846,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.5474358974358975,
+        "trend_pct": -37.19429347826087,
+        "centroid": [
+          77.649065,
+          28.71690130769231
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.649065,
+          28.71690130769231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 32,
+        "count": 18,
+        "avg_units": 24.0,
+        "avg_bill": 2708.758333333333,
+        "avg_load": 2.2222222222222223,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.2,
+        "trend_pct": -59.16142557651991,
+        "centroid": [
+          77.66835872222221,
+          28.712247000000005
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.66835872222221,
+          28.712247000000005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 33,
+        "count": 30,
+        "avg_units": 103.03333333333333,
+        "avg_bill": 3804.0946666666664,
+        "avg_load": 2.6,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.8586111111111111,
+        "trend_pct": -12.758813654168991,
+        "centroid": [
+          77.56859643333334,
+          28.836839166666664
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.56859643333334,
+          28.836839166666664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 34,
+        "count": 63,
+        "avg_units": 103.01587301587301,
+        "avg_bill": 4459.272063492063,
+        "avg_load": 2.857142857142857,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.8584656084656085,
+        "trend_pct": -31.36031851360318,
+        "centroid": [
+          77.77532041269842,
+          28.75612726984127
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.77532041269842,
+          28.75612726984127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 35,
+        "count": 175,
+        "avg_units": 80.68571428571428,
+        "avg_bill": 4819.895142857143,
+        "avg_load": 2.1942857142857144,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.6723809523809524,
+        "trend_pct": -16.90104550139892,
+        "centroid": [
+          77.39336177142857,
+          28.673747154285707
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.39336177142857,
+          28.673747154285707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 36,
+        "count": 262,
+        "avg_units": 90.59541984732824,
+        "avg_bill": 5369.402290076337,
+        "avg_load": 2.286259541984733,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.7549618320610687,
+        "trend_pct": -17.30042578290601,
+        "centroid": [
+          77.83553450000001,
+          28.188567091603055
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.83553450000001,
+          28.188567091603055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 37,
+        "count": 47,
+        "avg_units": 207.04255319148936,
+        "avg_bill": 7952.072340425532,
+        "avg_load": 3.3617021276595747,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.725354609929078,
+        "trend_pct": -37.361797752809,
+        "centroid": [
+          77.49921346808509,
+          28.768932212765954
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.49921346808509,
+          28.768932212765954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 38,
+        "count": 84,
+        "avg_units": 132.73809523809524,
+        "avg_bill": 5874.769166666666,
+        "avg_load": 2.2261904761904763,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.1061507936507937,
+        "trend_pct": -38.26148175756823,
+        "centroid": [
+          77.41908277380954,
+          28.694035630952385
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.41908277380954,
+          28.694035630952385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 39,
+        "count": 23,
+        "avg_units": 183.69565217391303,
+        "avg_bill": 6435.81956521739,
+        "avg_load": 2.9130434782608696,
+        "avg_acs": 1.0,
+        "suggested_kw": 1.5307971014492752,
+        "trend_pct": -26.63954434499593,
+        "centroid": [
+          77.41807426086956,
+          28.699403695652176
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.41807426086956,
+          28.699403695652176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 40,
+        "count": 58,
+        "avg_units": 86.98275862068965,
+        "avg_bill": 3887.5427586206897,
+        "avg_load": 2.086206896551724,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.7248563218390804,
+        "trend_pct": -17.494963062458027,
+        "centroid": [
+          77.44488487931034,
+          28.574742482758626
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.44488487931034,
+          28.574742482758626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 41,
+        "count": 13,
+        "avg_units": 53.46153846153846,
+        "avg_bill": 4769.421538461539,
+        "avg_load": 2.769230769230769,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.4455128205128205,
+        "trend_pct": 24.900310146211783,
+        "centroid": [
+          77.54651946153845,
+          28.584970615384613
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.54651946153845,
+          28.584970615384613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cluster": 42,
+        "count": 22,
+        "avg_units": 76.45454545454545,
+        "avg_bill": 3127.3586363636364,
+        "avg_load": 2.272727272727273,
+        "avg_acs": 1.0,
+        "suggested_kw": 0.6371212121212121,
+        "trend_pct": -60.15914137675795,
+        "centroid": [
+          76.9761095,
+          28.35556068181818
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.9761095,
+          28.35556068181818
+        ]
+      }
+    }
+  ]
+}
