@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+geopandas
+folium
+h3
+streamlit
+joblib
+shapely
+pyproj
+matplotlib
