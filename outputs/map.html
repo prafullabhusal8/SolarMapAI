@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6c4e03612a2343e47cd0fc86252866e8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6c4e03612a2343e47cd0fc86252866e8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6c4e03612a2343e47cd0fc86252866e8 = L.map(
+                "map_6c4e03612a2343e47cd0fc86252866e8",
+                {
+                    center: [20.0, 78.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ecb466405d4baaa647686973405cede0 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ecb466405d4baaa647686973405cede0.addTo(map_6c4e03612a2343e47cd0fc86252866e8);
+        
+    
+            var marker_cluster_6414f898232dcd2caaa21d2e58a27b97 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_f95ff043c7215580f90953b344e6a1b0 = L.circleMarker(
+                [28.66721382592949, 77.44732554032036],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.80034240114651, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_6dbfbf95ae3097b9e9b740c4fc0436fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5268710ea1a4992802f0366f2572103b = $(`<div id="html_5268710ea1a4992802f0366f2572103b" style="width: 100.0%; height: 100.0%;">Cluster: 0<br>Connections: 101884<br>Avg Units: 141.4 kWh<br>Avg Bill: ₹5547.5<br>Avg Load: 2.76 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.18 kW<br>Trend: -18.8% (vs last month)</div>`)[0];
+                popup_6dbfbf95ae3097b9e9b740c4fc0436fb.setContent(html_5268710ea1a4992802f0366f2572103b);
+            
+        
+
+        circle_marker_f95ff043c7215580f90953b344e6a1b0.bindPopup(popup_6dbfbf95ae3097b9e9b740c4fc0436fb)
+        ;
+
+        
+    
+    
+            var circle_marker_bb61d080eb8e11e422e79bef9b7fd20a = L.circleMarker(
+                [28.717050763676152, 77.40968879431072],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.280220034884243, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_ad61468e40babed7d16b41e884f4607b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aaffd079074368ad21a70baa7c9e0fca = $(`<div id="html_aaffd079074368ad21a70baa7c9e0fca" style="width: 100.0%; height: 100.0%;">Cluster: 1<br>Connections: 457<br>Avg Units: 85.4 kWh<br>Avg Bill: ₹5297.3<br>Avg Load: 2.88 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.71 kW<br>Trend: -21.0% (vs last month)</div>`)[0];
+                popup_ad61468e40babed7d16b41e884f4607b.setContent(html_aaffd079074368ad21a70baa7c9e0fca);
+            
+        
+
+        circle_marker_bb61d080eb8e11e422e79bef9b7fd20a.bindPopup(popup_ad61468e40babed7d16b41e884f4607b)
+        ;
+
+        
+    
+    
+            var circle_marker_a97531b9ae7dd60fb802679bea6acaa6 = L.circleMarker(
+                [28.777820554913294, 77.51280203468208],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.692603183910705, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_9c7e0af38f1ab456b29fc3a994e2e95a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_021570c9d783b25258ce14d0acac7640 = $(`<div id="html_021570c9d783b25258ce14d0acac7640" style="width: 100.0%; height: 100.0%;">Cluster: 2<br>Connections: 173<br>Avg Units: 542.1 kWh<br>Avg Bill: ₹6120.5<br>Avg Load: 2.92 kW<br>Avg ACs: 1.0<br>Suggested Solar: 4.52 kW<br>Trend: -1.7% (vs last month)</div>`)[0];
+                popup_9c7e0af38f1ab456b29fc3a994e2e95a.setContent(html_021570c9d783b25258ce14d0acac7640);
+            
+        
+
+        circle_marker_a97531b9ae7dd60fb802679bea6acaa6.bindPopup(popup_9c7e0af38f1ab456b29fc3a994e2e95a)
+        ;
+
+        
+    
+    
+            var circle_marker_bdb08a9eb0310b99ebebee31ec28cf6c = L.circleMarker(
+                [28.68495303423849, 77.348357],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.557271470127997, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_feb59731df5d873bd62def998bc823de = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_280301da5c445760b841f3e8ba6f10bc = $(`<div id="html_280301da5c445760b841f3e8ba6f10bc" style="width: 100.0%; height: 100.0%;">Cluster: 3<br>Connections: 847<br>Avg Units: 115.6 kWh<br>Avg Bill: ₹4682.1<br>Avg Load: 2.35 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.96 kW<br>Trend: -24.8% (vs last month)</div>`)[0];
+                popup_feb59731df5d873bd62def998bc823de.setContent(html_280301da5c445760b841f3e8ba6f10bc);
+            
+        
+
+        circle_marker_bdb08a9eb0310b99ebebee31ec28cf6c.bindPopup(popup_feb59731df5d873bd62def998bc823de)
+        ;
+
+        
+    
+    
+            var circle_marker_c158c0d9c757e95858ebebaa8efd4d7b = L.circleMarker(
+                [28.80961828222222, 77.89143236],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.251205185439066, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_0ac97acd1c665182a38267e44e914077 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8269b483673b2682b7a3e0631b6c6777 = $(`<div id="html_8269b483673b2682b7a3e0631b6c6777" style="width: 100.0%; height: 100.0%;">Cluster: 4<br>Connections: 450<br>Avg Units: 128.2 kWh<br>Avg Bill: ₹4341.7<br>Avg Load: 2.74 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.07 kW<br>Trend: -28.5% (vs last month)</div>`)[0];
+                popup_0ac97acd1c665182a38267e44e914077.setContent(html_8269b483673b2682b7a3e0631b6c6777);
+            
+        
+
+        circle_marker_c158c0d9c757e95858ebebaa8efd4d7b.bindPopup(popup_0ac97acd1c665182a38267e44e914077)
+        ;
+
+        
+    
+    
+            var circle_marker_31571ed2f82f2884e3e24f84dcd0d14f = L.circleMarker(
+                [28.86587090736842, 77.59594412842105],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.353427564464006, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_e26de66c3cc73f7427644adb89582393 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3bbb1f13016e03f832aa267b6353b42 = $(`<div id="html_f3bbb1f13016e03f832aa267b6353b42" style="width: 100.0%; height: 100.0%;">Cluster: 5<br>Connections: 475<br>Avg Units: 137.9 kWh<br>Avg Bill: ₹6465.1<br>Avg Load: 2.85 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.15 kW<br>Trend: -16.3% (vs last month)</div>`)[0];
+                popup_e26de66c3cc73f7427644adb89582393.setContent(html_f3bbb1f13016e03f832aa267b6353b42);
+            
+        
+
+        circle_marker_31571ed2f82f2884e3e24f84dcd0d14f.bindPopup(popup_e26de66c3cc73f7427644adb89582393)
+        ;
+
+        
+    
+    
+            var circle_marker_b872de4a6b4fdf04c7ffc83fee7b8962 = L.circleMarker(
+                [28.718693300261098, 77.47196899738903],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.956067791175357, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_623073875d3ae48c2da874c4c11f49b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac096e6345d73d67af9e70422de42e94 = $(`<div id="html_ac096e6345d73d67af9e70422de42e94" style="width: 100.0%; height: 100.0%;">Cluster: 6<br>Connections: 383<br>Avg Units: 93.8 kWh<br>Avg Bill: ₹3486.2<br>Avg Load: 2.52 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.78 kW<br>Trend: -25.8% (vs last month)</div>`)[0];
+                popup_623073875d3ae48c2da874c4c11f49b0.setContent(html_ac096e6345d73d67af9e70422de42e94);
+            
+        
+
+        circle_marker_b872de4a6b4fdf04c7ffc83fee7b8962.bindPopup(popup_623073875d3ae48c2da874c4c11f49b0)
+        ;
+
+        
+    
+    
+            var circle_marker_176183cb118d9e955dbcf5dace2e2b62 = L.circleMarker(
+                [28.711243296391753, 77.43881785824742],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.979288625183734, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_04d712b02bd1cb434abb1e8c80bcb0f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8eb266b09990184e631985f6f0d89147 = $(`<div id="html_8eb266b09990184e631985f6f0d89147" style="width: 100.0%; height: 100.0%;">Cluster: 7<br>Connections: 388<br>Avg Units: 61.9 kWh<br>Avg Bill: ₹3619.7<br>Avg Load: 2.80 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.52 kW<br>Trend: -18.2% (vs last month)</div>`)[0];
+                popup_04d712b02bd1cb434abb1e8c80bcb0f6.setContent(html_8eb266b09990184e631985f6f0d89147);
+            
+        
+
+        circle_marker_176183cb118d9e955dbcf5dace2e2b62.bindPopup(popup_04d712b02bd1cb434abb1e8c80bcb0f6)
+        ;
+
+        
+    
+    
+            var circle_marker_2905bb5cdc1bc97ce8097fbff16c85f5 = L.circleMarker(
+                [28.68714660532995, 77.40878937055838],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.39533522882411, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_112f92965ccf01006324e4afe63e4097 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5cb102c187a33fb3189eb8ce331bb23 = $(`<div id="html_b5cb102c187a33fb3189eb8ce331bb23" style="width: 100.0%; height: 100.0%;">Cluster: 8<br>Connections: 788<br>Avg Units: 173.3 kWh<br>Avg Bill: ₹5668.8<br>Avg Load: 2.62 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.44 kW<br>Trend: -15.3% (vs last month)</div>`)[0];
+                popup_112f92965ccf01006324e4afe63e4097.setContent(html_b5cb102c187a33fb3189eb8ce331bb23);
+            
+        
+
+        circle_marker_2905bb5cdc1bc97ce8097fbff16c85f5.bindPopup(popup_112f92965ccf01006324e4afe63e4097)
+        ;
+
+        
+    
+    
+            var circle_marker_b84ede41b0768bc974202b73e82e1d84 = L.circleMarker(
+                [28.74988753103449, 77.72287448275863],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.450516348093167, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_8f85d850f52443837688eec03f28b19d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_454da78d32ee42529ac77112c2f0fef9 = $(`<div id="html_454da78d32ee42529ac77112c2f0fef9" style="width: 100.0%; height: 100.0%;">Cluster: 9<br>Connections: 145<br>Avg Units: 120.8 kWh<br>Avg Bill: ₹3427.6<br>Avg Load: 2.70 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.01 kW<br>Trend: -7.3% (vs last month)</div>`)[0];
+                popup_8f85d850f52443837688eec03f28b19d.setContent(html_454da78d32ee42529ac77112c2f0fef9);
+            
+        
+
+        circle_marker_b84ede41b0768bc974202b73e82e1d84.bindPopup(popup_8f85d850f52443837688eec03f28b19d)
+        ;
+
+        
+    
+    
+            var circle_marker_36910acd93d0a4e7c19116e44120350c = L.circleMarker(
+                [29.10659572093024, 77.91475042441861],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.684449204531727, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_c5503b459992018010ffeb6810a0e1e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_905c5f0b305339c2b7ab9ba1641b9524 = $(`<div id="html_905c5f0b305339c2b7ab9ba1641b9524" style="width: 100.0%; height: 100.0%;">Cluster: 10<br>Connections: 172<br>Avg Units: 156.3 kWh<br>Avg Bill: ₹6757.5<br>Avg Load: 2.74 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.30 kW<br>Trend: -4.1% (vs last month)</div>`)[0];
+                popup_c5503b459992018010ffeb6810a0e1e5.setContent(html_905c5f0b305339c2b7ab9ba1641b9524);
+            
+        
+
+        circle_marker_36910acd93d0a4e7c19116e44120350c.bindPopup(popup_c5503b459992018010ffeb6810a0e1e5)
+        ;
+
+        
+    
+    
+            var circle_marker_0eac4affb8b5417a533bbdd3b7d2f93c = L.circleMarker(
+                [29.09372807317073, 77.9202297804878],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.046738334899583, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_324739dc73cbdac42a58bd97156380bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4aece8e9cf93ea218100066e8713cdc = $(`<div id="html_a4aece8e9cf93ea218100066e8713cdc" style="width: 100.0%; height: 100.0%;">Cluster: 11<br>Connections: 41<br>Avg Units: 128.9 kWh<br>Avg Bill: ₹6187.4<br>Avg Load: 3.37 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.07 kW<br>Trend: -43.6% (vs last month)</div>`)[0];
+                popup_324739dc73cbdac42a58bd97156380bb.setContent(html_a4aece8e9cf93ea218100066e8713cdc);
+            
+        
+
+        circle_marker_0eac4affb8b5417a533bbdd3b7d2f93c.bindPopup(popup_324739dc73cbdac42a58bd97156380bb)
+        ;
+
+        
+    
+    
+            var circle_marker_ff572cad178463fa970592737c278596 = L.circleMarker(
+                [28.725893663934425, 77.79821308196722],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.225790371198991, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_768ccce24ab70399c82bf044d8f10119 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2552835150163525fad35e712d051d56 = $(`<div id="html_2552835150163525fad35e712d051d56" style="width: 100.0%; height: 100.0%;">Cluster: 12<br>Connections: 122<br>Avg Units: 49.3 kWh<br>Avg Bill: ₹4716.9<br>Avg Load: 3.39 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.41 kW<br>Trend: -38.9% (vs last month)</div>`)[0];
+                popup_768ccce24ab70399c82bf044d8f10119.setContent(html_2552835150163525fad35e712d051d56);
+            
+        
+
+        circle_marker_ff572cad178463fa970592737c278596.bindPopup(popup_768ccce24ab70399c82bf044d8f10119)
+        ;
+
+        
+    
+    
+            var circle_marker_18b012038b28039bdd6d271d5a217dfa = L.circleMarker(
+                [28.850711438356168, 77.56702353424657],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.622403777287989, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_ef79fdeb1276c8293ef84094007aa742 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6433d5b7a4604825bbe992b4f6917ecf = $(`<div id="html_6433d5b7a4604825bbe992b4f6917ecf" style="width: 100.0%; height: 100.0%;">Cluster: 13<br>Connections: 73<br>Avg Units: 537.5 kWh<br>Avg Bill: ₹6875.6<br>Avg Load: 2.47 kW<br>Avg ACs: 1.0<br>Suggested Solar: 4.48 kW<br>Trend: -27.6% (vs last month)</div>`)[0];
+                popup_ef79fdeb1276c8293ef84094007aa742.setContent(html_6433d5b7a4604825bbe992b4f6917ecf);
+            
+        
+
+        circle_marker_18b012038b28039bdd6d271d5a217dfa.bindPopup(popup_ef79fdeb1276c8293ef84094007aa742)
+        ;
+
+        
+    
+    
+            var circle_marker_a5ab2f30fa49c5c67136d6f771248936 = L.circleMarker(
+                [28.82326343142857, 77.56924587714286],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.797228429415686, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_5d798dc88ff7cea627abbd184d473730 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7de3b6cef670743dfe309f12793139b = $(`<div id="html_c7de3b6cef670743dfe309f12793139b" style="width: 100.0%; height: 100.0%;">Cluster: 14<br>Connections: 350<br>Avg Units: 112.6 kWh<br>Avg Bill: ₹5372.6<br>Avg Load: 2.90 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.94 kW<br>Trend: -24.1% (vs last month)</div>`)[0];
+                popup_5d798dc88ff7cea627abbd184d473730.setContent(html_c7de3b6cef670743dfe309f12793139b);
+            
+        
+
+        circle_marker_a5ab2f30fa49c5c67136d6f771248936.bindPopup(popup_5d798dc88ff7cea627abbd184d473730)
+        ;
+
+        
+    
+    
+            var circle_marker_97a28437a1dc544de26872fe9fffa2b6 = L.circleMarker(
+                [28.759452068965516, 77.4913810862069],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.162338506563337, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_2a30703daa1c146642678afd78adca64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccfbf5458410f70ab09fe00aaee7e659 = $(`<div id="html_ccfbf5458410f70ab09fe00aaee7e659" style="width: 100.0%; height: 100.0%;">Cluster: 15<br>Connections: 116<br>Avg Units: 142.5 kWh<br>Avg Bill: ₹3337.6<br>Avg Load: 2.44 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.19 kW<br>Trend: -18.0% (vs last month)</div>`)[0];
+                popup_2a30703daa1c146642678afd78adca64.setContent(html_ccfbf5458410f70ab09fe00aaee7e659);
+            
+        
+
+        circle_marker_97a28437a1dc544de26872fe9fffa2b6.bindPopup(popup_2a30703daa1c146642678afd78adca64)
+        ;
+
+        
+    
+    
+            var circle_marker_49ea8a76dc1be273668f89b5c6271769 = L.circleMarker(
+                [28.71766638938053, 77.79226972566372],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.129747824285516, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_adff6d4f916d730332060b80d07b949e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80bcec9776bb5c1300220ffcca225ffa = $(`<div id="html_80bcec9776bb5c1300220ffcca225ffa" style="width: 100.0%; height: 100.0%;">Cluster: 16<br>Connections: 113<br>Avg Units: 208.7 kWh<br>Avg Bill: ₹18350.9<br>Avg Load: 2.57 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.74 kW<br>Trend: 94.3% (vs last month)</div>`)[0];
+                popup_adff6d4f916d730332060b80d07b949e.setContent(html_80bcec9776bb5c1300220ffcca225ffa);
+            
+        
+
+        circle_marker_49ea8a76dc1be273668f89b5c6271769.bindPopup(popup_adff6d4f916d730332060b80d07b949e)
+        ;
+
+        
+    
+    
+            var circle_marker_608a6cbc2b9e9024d4ac0eb071a3a3b8 = L.circleMarker(
+                [28.747975209790212, 77.71085782517481],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.432010812466597, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_cb76111348bedd4264fb62d752cf636e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_639181c4850203b3406f28b6a7e3107a = $(`<div id="html_639181c4850203b3406f28b6a7e3107a" style="width: 100.0%; height: 100.0%;">Cluster: 17<br>Connections: 143<br>Avg Units: 182.0 kWh<br>Avg Bill: ₹9726.0<br>Avg Load: 2.71 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.52 kW<br>Trend: 58.3% (vs last month)</div>`)[0];
+                popup_cb76111348bedd4264fb62d752cf636e.setContent(html_639181c4850203b3406f28b6a7e3107a);
+            
+        
+
+        circle_marker_608a6cbc2b9e9024d4ac0eb071a3a3b8.bindPopup(popup_cb76111348bedd4264fb62d752cf636e)
+        ;
+
+        
+    
+    
+            var circle_marker_fa6cd8a81516a7eda1bb19091ca9b63b = L.circleMarker(
+                [28.61124113793103, 77.32935982758622],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.74611929336248, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_a7c331363c6dadfc5aabe435d9070acb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_663ac08cce974ff4c558955342363204 = $(`<div id="html_663ac08cce974ff4c558955342363204" style="width: 100.0%; height: 100.0%;">Cluster: 18<br>Connections: 29<br>Avg Units: 36.7 kWh<br>Avg Bill: ₹4959.7<br>Avg Load: 2.69 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.31 kW<br>Trend: 4.9% (vs last month)</div>`)[0];
+                popup_a7c331363c6dadfc5aabe435d9070acb.setContent(html_663ac08cce974ff4c558955342363204);
+            
+        
+
+        circle_marker_fa6cd8a81516a7eda1bb19091ca9b63b.bindPopup(popup_a7c331363c6dadfc5aabe435d9070acb)
+        ;
+
+        
+    
+    
+            var circle_marker_e92a8f7e933cfbeface65bb2ced123a2 = L.circleMarker(
+                [28.723758550000003, 77.299540925],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.024252145332218, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_3701acc7fb1ca05a722a2c3489ec01bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e53fb9ff068e68d3e7c19c8d151133ba = $(`<div id="html_e53fb9ff068e68d3e7c19c8d151133ba" style="width: 100.0%; height: 100.0%;">Cluster: 19<br>Connections: 40<br>Avg Units: 13.6 kWh<br>Avg Bill: ₹3385.6<br>Avg Load: 1.27 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.11 kW<br>Trend: -5.5% (vs last month)</div>`)[0];
+                popup_3701acc7fb1ca05a722a2c3489ec01bc.setContent(html_e53fb9ff068e68d3e7c19c8d151133ba);
+            
+        
+
+        circle_marker_e92a8f7e933cfbeface65bb2ced123a2.bindPopup(popup_3701acc7fb1ca05a722a2c3489ec01bc)
+        ;
+
+        
+    
+    
+            var circle_marker_d51fb365dfeaf08ee2adb1aa58031d35 = L.circleMarker(
+                [28.924018581818185, 77.661052],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.327429072706327, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_329659d9ec0aa33c88f6eed065d02ad2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5527ea416049962cf6bb74551f16f24 = $(`<div id="html_b5527ea416049962cf6bb74551f16f24" style="width: 100.0%; height: 100.0%;">Cluster: 20<br>Connections: 55<br>Avg Units: 14.8 kWh<br>Avg Bill: ₹3805.1<br>Avg Load: 1.47 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.12 kW<br>Trend: -55.5% (vs last month)</div>`)[0];
+                popup_329659d9ec0aa33c88f6eed065d02ad2.setContent(html_b5527ea416049962cf6bb74551f16f24);
+            
+        
+
+        circle_marker_d51fb365dfeaf08ee2adb1aa58031d35.bindPopup(popup_329659d9ec0aa33c88f6eed065d02ad2)
+        ;
+
+        
+    
+    
+            var circle_marker_770605686a891fa3138c0abd3d2c29cd = L.circleMarker(
+                [28.858394127659576, 77.58509482978724],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.17416396802466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_1bf99e9f6e5a481a97b67b00e26a1bdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99f81760b0267f6619fade57b0be40e8 = $(`<div id="html_99f81760b0267f6619fade57b0be40e8" style="width: 100.0%; height: 100.0%;">Cluster: 21<br>Connections: 47<br>Avg Units: 127.9 kWh<br>Avg Bill: ₹6097.3<br>Avg Load: 3.26 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.07 kW<br>Trend: -21.4% (vs last month)</div>`)[0];
+                popup_1bf99e9f6e5a481a97b67b00e26a1bdd.setContent(html_99f81760b0267f6619fade57b0be40e8);
+            
+        
+
+        circle_marker_770605686a891fa3138c0abd3d2c29cd.bindPopup(popup_1bf99e9f6e5a481a97b67b00e26a1bdd)
+        ;
+
+        
+    
+    
+            var circle_marker_0274c4b9cd0eb1122ccdea0ae14232ef = L.circleMarker(
+                [28.760271954545452, 77.50587531818181],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.326853384396008, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_f2b113dc91877da011e44f3c60c5f841 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9c3a817f51234a93be97caf920b62fd = $(`<div id="html_a9c3a817f51234a93be97caf920b62fd" style="width: 100.0%; height: 100.0%;">Cluster: 22<br>Connections: 132<br>Avg Units: 410.9 kWh<br>Avg Bill: ₹5273.5<br>Avg Load: 3.41 kW<br>Avg ACs: 1.0<br>Suggested Solar: 3.42 kW<br>Trend: -27.1% (vs last month)</div>`)[0];
+                popup_f2b113dc91877da011e44f3c60c5f841.setContent(html_a9c3a817f51234a93be97caf920b62fd);
+            
+        
+
+        circle_marker_0274c4b9cd0eb1122ccdea0ae14232ef.bindPopup(popup_f2b113dc91877da011e44f3c60c5f841)
+        ;
+
+        
+    
+    
+            var circle_marker_379713e50e4769f0786211ca13c9a2eb = L.circleMarker(
+                [28.673652049999998, 77.4651208],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.45645605223158, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_908b51d5465baea1293bf6ce6c0eb55c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fca85af8f76919a7fdeb02ef1088045 = $(`<div id="html_4fca85af8f76919a7fdeb02ef1088045" style="width: 100.0%; height: 100.0%;">Cluster: 23<br>Connections: 20<br>Avg Units: 115.0 kWh<br>Avg Bill: ₹5608.5<br>Avg Load: 3.00 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.96 kW<br>Trend: -7.5% (vs last month)</div>`)[0];
+                popup_908b51d5465baea1293bf6ce6c0eb55c.setContent(html_4fca85af8f76919a7fdeb02ef1088045);
+            
+        
+
+        circle_marker_379713e50e4769f0786211ca13c9a2eb.bindPopup(popup_908b51d5465baea1293bf6ce6c0eb55c)
+        ;
+
+        
+    
+    
+            var circle_marker_f6d004c6500258b173d535ec54bc9659 = L.circleMarker(
+                [28.687211958333332, 77.53284854166667],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.594557933960465, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_60e33cafb3b7a09d06411fd931439aa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_900c48c2adf5572c1c4d1aec1c79340b = $(`<div id="html_900c48c2adf5572c1c4d1aec1c79340b" style="width: 100.0%; height: 100.0%;">Cluster: 24<br>Connections: 24<br>Avg Units: 44.1 kWh<br>Avg Bill: ₹1343.5<br>Avg Load: 2.25 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.37 kW<br>Trend: 11.3% (vs last month)</div>`)[0];
+                popup_60e33cafb3b7a09d06411fd931439aa2.setContent(html_900c48c2adf5572c1c4d1aec1c79340b);
+            
+        
+
+        circle_marker_f6d004c6500258b173d535ec54bc9659.bindPopup(popup_60e33cafb3b7a09d06411fd931439aa2)
+        ;
+
+        
+    
+    
+            var circle_marker_d11ad93cad2a455db545086c169470dd = L.circleMarker(
+                [28.731345315789476, 77.77580363157895],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.418945481487587, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_27e9b3b042e5caf62f6d582cce2a27ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f781b4652fca7a38944bbfb2e28850b5 = $(`<div id="html_f781b4652fca7a38944bbfb2e28850b5" style="width: 100.0%; height: 100.0%;">Cluster: 25<br>Connections: 19<br>Avg Units: 133.8 kWh<br>Avg Bill: ₹5189.5<br>Avg Load: 3.74 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.11 kW<br>Trend: -31.1% (vs last month)</div>`)[0];
+                popup_27e9b3b042e5caf62f6d582cce2a27ab.setContent(html_f781b4652fca7a38944bbfb2e28850b5);
+            
+        
+
+        circle_marker_d11ad93cad2a455db545086c169470dd.bindPopup(popup_27e9b3b042e5caf62f6d582cce2a27ab)
+        ;
+
+        
+    
+    
+            var circle_marker_7f14e4963d632d41861b200b4bf6cbaa = L.circleMarker(
+                [28.60830511764706, 77.48482499999999],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.339562633681451, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_0f2e0f06bc41ceaf9d23fab253da46ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_155d3814236a88aba4eedebb23e8fec8 = $(`<div id="html_155d3814236a88aba4eedebb23e8fec8" style="width: 100.0%; height: 100.0%;">Cluster: 26<br>Connections: 17<br>Avg Units: 72.8 kWh<br>Avg Bill: ₹2645.1<br>Avg Load: 2.53 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.61 kW<br>Trend: -14.1% (vs last month)</div>`)[0];
+                popup_0f2e0f06bc41ceaf9d23fab253da46ea.setContent(html_155d3814236a88aba4eedebb23e8fec8);
+            
+        
+
+        circle_marker_7f14e4963d632d41861b200b4bf6cbaa.bindPopup(popup_0f2e0f06bc41ceaf9d23fab253da46ea)
+        ;
+
+        
+    
+    
+            var circle_marker_2cada4ee7f61a0bbbef39a7034d2125f = L.circleMarker(
+                [28.95770592307692, 78.02273561538462],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.158653844421579, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_5c1cdb0fd1091469b1db4f22e67000fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1e848605e7c9f675887853175cf6cc3 = $(`<div id="html_e1e848605e7c9f675887853175cf6cc3" style="width: 100.0%; height: 100.0%;">Cluster: 27<br>Connections: 13<br>Avg Units: 108.3 kWh<br>Avg Bill: ₹4590.3<br>Avg Load: 3.00 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.90 kW<br>Trend: -3.3% (vs last month)</div>`)[0];
+                popup_5c1cdb0fd1091469b1db4f22e67000fa.setContent(html_e1e848605e7c9f675887853175cf6cc3);
+            
+        
+
+        circle_marker_2cada4ee7f61a0bbbef39a7034d2125f.bindPopup(popup_5c1cdb0fd1091469b1db4f22e67000fa)
+        ;
+
+        
+    
+    
+            var circle_marker_7ca0e31209e77e0b80f548df6682c987 = L.circleMarker(
+                [28.751220636363634, 77.48028699999999],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.053136413658844, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_dd7b77d9f34d9efe2a0f0dd193ac7ca8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc632fab46626e1d1a64f50db67c47fd = $(`<div id="html_cc632fab46626e1d1a64f50db67c47fd" style="width: 100.0%; height: 100.0%;">Cluster: 28<br>Connections: 11<br>Avg Units: 228.4 kWh<br>Avg Bill: ₹5792.8<br>Avg Load: 3.73 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.90 kW<br>Trend: 37.7% (vs last month)</div>`)[0];
+                popup_dd7b77d9f34d9efe2a0f0dd193ac7ca8.setContent(html_cc632fab46626e1d1a64f50db67c47fd);
+            
+        
+
+        circle_marker_7ca0e31209e77e0b80f548df6682c987.bindPopup(popup_dd7b77d9f34d9efe2a0f0dd193ac7ca8)
+        ;
+
+        
+    
+    
+            var circle_marker_e53c05b748f81ce1062b883a44d580e9 = L.circleMarker(
+                [28.80716809090909, 77.47479781818183],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.053136413658844, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_904bd6329d410fbd5ab4727f8e405a0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d45948f26611ddd02049ae83299bd886 = $(`<div id="html_d45948f26611ddd02049ae83299bd886" style="width: 100.0%; height: 100.0%;">Cluster: 29<br>Connections: 11<br>Avg Units: 72.5 kWh<br>Avg Bill: ₹4077.7<br>Avg Load: 2.09 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.60 kW<br>Trend: -22.2% (vs last month)</div>`)[0];
+                popup_904bd6329d410fbd5ab4727f8e405a0e.setContent(html_d45948f26611ddd02049ae83299bd886);
+            
+        
+
+        circle_marker_e53c05b748f81ce1062b883a44d580e9.bindPopup(popup_904bd6329d410fbd5ab4727f8e405a0e)
+        ;
+
+        
+    
+    
+            var circle_marker_8b0f473c98a45b64b3cd3ab810eef2c7 = L.circleMarker(
+                [28.702350249999995, 77.42353583333333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.107435899344472, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_76ff069cf2b69b53be861ff3f0aa8294 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_801e823ab389fee8b43781c8c65052c8 = $(`<div id="html_801e823ab389fee8b43781c8c65052c8" style="width: 100.0%; height: 100.0%;">Cluster: 30<br>Connections: 12<br>Avg Units: 37.8 kWh<br>Avg Bill: ₹2261.9<br>Avg Load: 2.25 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.32 kW<br>Trend: -14.9% (vs last month)</div>`)[0];
+                popup_76ff069cf2b69b53be861ff3f0aa8294.setContent(html_801e823ab389fee8b43781c8c65052c8);
+            
+        
+
+        circle_marker_8b0f473c98a45b64b3cd3ab810eef2c7.bindPopup(popup_76ff069cf2b69b53be861ff3f0aa8294)
+        ;
+
+        
+    
+    
+            var circle_marker_fa8fc895927743bd4e063f6f049b728a = L.circleMarker(
+                [28.71690130769231, 77.649065],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.158653844421579, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_141b0c3f9d76126b8493da379954026f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ed47cc70824e84d14da17ecf25e9b2c = $(`<div id="html_9ed47cc70824e84d14da17ecf25e9b2c" style="width: 100.0%; height: 100.0%;">Cluster: 31<br>Connections: 13<br>Avg Units: 65.7 kWh<br>Avg Bill: ₹1587.0<br>Avg Load: 2.38 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.55 kW<br>Trend: -37.2% (vs last month)</div>`)[0];
+                popup_141b0c3f9d76126b8493da379954026f.setContent(html_9ed47cc70824e84d14da17ecf25e9b2c);
+            
+        
+
+        circle_marker_fa8fc895927743bd4e063f6f049b728a.bindPopup(popup_141b0c3f9d76126b8493da379954026f)
+        ;
+
+        
+    
+    
+            var circle_marker_eef66b1351aadf795f8d11c14a90d34e = L.circleMarker(
+                [28.712247000000005, 77.66835872222221],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.38002627459644, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_67675196f230ba651f74050be016db58 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b92a3c2074faea1a461c66ec81e248c = $(`<div id="html_6b92a3c2074faea1a461c66ec81e248c" style="width: 100.0%; height: 100.0%;">Cluster: 32<br>Connections: 18<br>Avg Units: 24.0 kWh<br>Avg Bill: ₹2708.8<br>Avg Load: 2.22 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.20 kW<br>Trend: -59.2% (vs last month)</div>`)[0];
+                popup_67675196f230ba651f74050be016db58.setContent(html_6b92a3c2074faea1a461c66ec81e248c);
+            
+        
+
+        circle_marker_eef66b1351aadf795f8d11c14a90d34e.bindPopup(popup_67675196f230ba651f74050be016db58)
+        ;
+
+        
+    
+    
+            var circle_marker_9e2f6ea7f4c7d75e35c47ead54c61fe0 = L.circleMarker(
+                [28.836839166666664, 77.56859643333334],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.774191114672181, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_9269c67d725637913a9af92c43643505 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a887ec0b3513c57680605c9f7b05b53 = $(`<div id="html_1a887ec0b3513c57680605c9f7b05b53" style="width: 100.0%; height: 100.0%;">Cluster: 33<br>Connections: 30<br>Avg Units: 103.0 kWh<br>Avg Bill: ₹3804.1<br>Avg Load: 2.60 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.86 kW<br>Trend: -12.8% (vs last month)</div>`)[0];
+                popup_9269c67d725637913a9af92c43643505.setContent(html_1a887ec0b3513c57680605c9f7b05b53);
+            
+        
+
+        circle_marker_9e2f6ea7f4c7d75e35c47ead54c61fe0.bindPopup(popup_9269c67d725637913a9af92c43643505)
+        ;
+
+        
+    
+    
+            var circle_marker_e203490773970554465f7cbe418abb48 = L.circleMarker(
+                [28.75612726984127, 77.77532041269842],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.46578936587948, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_b518af6dca70ca9d633a4c91e541661d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70f080f41cd22c1a3a3abfe6768d1db0 = $(`<div id="html_70f080f41cd22c1a3a3abfe6768d1db0" style="width: 100.0%; height: 100.0%;">Cluster: 34<br>Connections: 63<br>Avg Units: 103.0 kWh<br>Avg Bill: ₹4459.3<br>Avg Load: 2.86 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.86 kW<br>Trend: -31.4% (vs last month)</div>`)[0];
+                popup_b518af6dca70ca9d633a4c91e541661d.setContent(html_70f080f41cd22c1a3a3abfe6768d1db0);
+            
+        
+
+        circle_marker_e203490773970554465f7cbe418abb48.bindPopup(popup_b518af6dca70ca9d633a4c91e541661d)
+        ;
+
+        
+    
+    
+            var circle_marker_7d9ebf1af6af4cc884f1d7e9f6c98618 = L.circleMarker(
+                [28.673747154285707, 77.39336177142857],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.708812684017387, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_9b59e235000eca2ab06147cbd2c33efc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_416f71d5da4bae54b867b731e3f65555 = $(`<div id="html_416f71d5da4bae54b867b731e3f65555" style="width: 100.0%; height: 100.0%;">Cluster: 35<br>Connections: 175<br>Avg Units: 80.7 kWh<br>Avg Bill: ₹4819.9<br>Avg Load: 2.19 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.67 kW<br>Trend: -16.9% (vs last month)</div>`)[0];
+                popup_9b59e235000eca2ab06147cbd2c33efc.setContent(html_416f71d5da4bae54b867b731e3f65555);
+            
+        
+
+        circle_marker_7d9ebf1af6af4cc884f1d7e9f6c98618.bindPopup(popup_9b59e235000eca2ab06147cbd2c33efc)
+        ;
+
+        
+    
+    
+            var circle_marker_f492751ea15ccabfd0966eab5a105735 = L.circleMarker(
+                [28.188567091603055, 77.83553450000001],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.314842355900357, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_d7fbaf33a00218b337c80d2cbb50d6ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_462192995fcb3f2f44295e2817bffcf0 = $(`<div id="html_462192995fcb3f2f44295e2817bffcf0" style="width: 100.0%; height: 100.0%;">Cluster: 36<br>Connections: 262<br>Avg Units: 90.6 kWh<br>Avg Bill: ₹5369.4<br>Avg Load: 2.29 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.75 kW<br>Trend: -17.3% (vs last month)</div>`)[0];
+                popup_d7fbaf33a00218b337c80d2cbb50d6ba.setContent(html_462192995fcb3f2f44295e2817bffcf0);
+            
+        
+
+        circle_marker_f492751ea15ccabfd0966eab5a105735.bindPopup(popup_d7fbaf33a00218b337c80d2cbb50d6ba)
+        ;
+
+        
+    
+    
+            var circle_marker_4f3472155fab13f5008cb33719dd1539 = L.circleMarker(
+                [28.768932212765954, 77.49921346808509],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.17416396802466, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_121d59106d8c422b351e63c8f184f7ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2f44269d457018e8a9530ebc269e631 = $(`<div id="html_c2f44269d457018e8a9530ebc269e631" style="width: 100.0%; height: 100.0%;">Cluster: 37<br>Connections: 47<br>Avg Units: 207.0 kWh<br>Avg Bill: ₹7952.1<br>Avg Load: 3.36 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.73 kW<br>Trend: -37.4% (vs last month)</div>`)[0];
+                popup_121d59106d8c422b351e63c8f184f7ce.setContent(html_c2f44269d457018e8a9530ebc269e631);
+            
+        
+
+        circle_marker_4f3472155fab13f5008cb33719dd1539.bindPopup(popup_121d59106d8c422b351e63c8f184f7ce)
+        ;
+
+        
+    
+    
+            var circle_marker_675e97fd9b26fdd95b632becf7bbde4a = L.circleMarker(
+                [28.694035630952385, 77.41908277380954],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.77818992700118, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_168aa063cd7117126632b8149f34477a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54b136e7b39ea2fdf4e65592de403b54 = $(`<div id="html_54b136e7b39ea2fdf4e65592de403b54" style="width: 100.0%; height: 100.0%;">Cluster: 38<br>Connections: 84<br>Avg Units: 132.7 kWh<br>Avg Bill: ₹5874.8<br>Avg Load: 2.23 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.11 kW<br>Trend: -38.3% (vs last month)</div>`)[0];
+                popup_168aa063cd7117126632b8149f34477a.setContent(html_54b136e7b39ea2fdf4e65592de403b54);
+            
+        
+
+        circle_marker_675e97fd9b26fdd95b632becf7bbde4a.bindPopup(popup_168aa063cd7117126632b8149f34477a)
+        ;
+
+        
+    
+    
+            var circle_marker_731907c75f324ff281dd677b5793caa9 = L.circleMarker(
+                [28.699403695652176, 77.41807426086956],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.561641502145813, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_4dda399b9f5125d2501a3a3e705c4f1d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_706c0d8aa038df906712e7e6074d3560 = $(`<div id="html_706c0d8aa038df906712e7e6074d3560" style="width: 100.0%; height: 100.0%;">Cluster: 39<br>Connections: 23<br>Avg Units: 183.7 kWh<br>Avg Bill: ₹6435.8<br>Avg Load: 2.91 kW<br>Avg ACs: 1.0<br>Suggested Solar: 1.53 kW<br>Trend: -26.6% (vs last month)</div>`)[0];
+                popup_4dda399b9f5125d2501a3a3e705c4f1d.setContent(html_706c0d8aa038df906712e7e6074d3560);
+            
+        
+
+        circle_marker_731907c75f324ff281dd677b5793caa9.bindPopup(popup_4dda399b9f5125d2501a3a3e705c4f1d)
+        ;
+
+        
+    
+    
+            var circle_marker_153f87d07719ce99dfcd378985b2359d = L.circleMarker(
+                [28.574742482758626, 77.44488487931034],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.380869426401905, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_68bb69894a3635bc2c9cdd549f65dae6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ab8ce8581b4a661f2dd1c743a4e63c1 = $(`<div id="html_3ab8ce8581b4a661f2dd1c743a4e63c1" style="width: 100.0%; height: 100.0%;">Cluster: 40<br>Connections: 58<br>Avg Units: 87.0 kWh<br>Avg Bill: ₹3887.5<br>Avg Load: 2.09 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.72 kW<br>Trend: -17.5% (vs last month)</div>`)[0];
+                popup_68bb69894a3635bc2c9cdd549f65dae6.setContent(html_3ab8ce8581b4a661f2dd1c743a4e63c1);
+            
+        
+
+        circle_marker_153f87d07719ce99dfcd378985b2359d.bindPopup(popup_68bb69894a3635bc2c9cdd549f65dae6)
+        ;
+
+        
+    
+    
+            var circle_marker_cb0822961523468918e38b65dd185653 = L.circleMarker(
+                [28.584970615384613, 77.54651946153845],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.158653844421579, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_c26acca7ee297370ca3b1002bf75af31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5136a293b56c9f0d7a9e5dcf842c4251 = $(`<div id="html_5136a293b56c9f0d7a9e5dcf842c4251" style="width: 100.0%; height: 100.0%;">Cluster: 41<br>Connections: 13<br>Avg Units: 53.5 kWh<br>Avg Bill: ₹4769.4<br>Avg Load: 2.77 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.45 kW<br>Trend: 24.9% (vs last month)</div>`)[0];
+                popup_c26acca7ee297370ca3b1002bf75af31.setContent(html_5136a293b56c9f0d7a9e5dcf842c4251);
+            
+        
+
+        circle_marker_cb0822961523468918e38b65dd185653.bindPopup(popup_c26acca7ee297370ca3b1002bf75af31)
+        ;
+
+        
+    
+    
+            var circle_marker_171d73fb101ee5b321d9035333d6c04d = L.circleMarker(
+                [28.35556068181818, 76.9761095],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.527707425511103, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6414f898232dcd2caaa21d2e58a27b97);
+        
+    
+        var popup_fefbad0179a94fa1b99dcfc73a81b6ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37732fdbff7373ecff655ae8a4c0c0de = $(`<div id="html_37732fdbff7373ecff655ae8a4c0c0de" style="width: 100.0%; height: 100.0%;">Cluster: 42<br>Connections: 22<br>Avg Units: 76.5 kWh<br>Avg Bill: ₹3127.4<br>Avg Load: 2.27 kW<br>Avg ACs: 1.0<br>Suggested Solar: 0.64 kW<br>Trend: -60.2% (vs last month)</div>`)[0];
+                popup_fefbad0179a94fa1b99dcfc73a81b6ca.setContent(html_37732fdbff7373ecff655ae8a4c0c0de);
+            
+        
+
+        circle_marker_171d73fb101ee5b321d9035333d6c04d.bindPopup(popup_fefbad0179a94fa1b99dcfc73a81b6ca)
+        ;
+
+        
+    
+    
+            marker_cluster_6414f898232dcd2caaa21d2e58a27b97.addTo(map_6c4e03612a2343e47cd0fc86252866e8);
+        
+</script>
+</html>
